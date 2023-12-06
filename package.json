@@ -1,6 +1,6 @@
 {
   "name": "@tenoxui/component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "TenoxUI component for web developement.",
   "main": "./dist/js/property.min.js",
   "scripts": {
