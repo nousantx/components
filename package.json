@@ -1,0 +1,26 @@
+{
+  "name": "@tenoxui/component",
+  "version": "0.0.1",
+  "description": "TenoxUI component for web developement.",
+  "main": "./dist/js/property.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nousantx/tenoxui-component.git"
+  },
+  "keywords": [
+    "css",
+    "css3",
+    "framework",
+    "library",
+    "ui"
+  ],
+  "author": "nousantx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nousantx/tenoxui-component/issues"
+  },
+  "homepage": "https://github.com/nousantx/tenoxui-component"
+}

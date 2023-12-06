@@ -1,0 +1,6 @@
+/*!
+ * TenoxUI Utility-First CSS Framework | https://tenoxui.web.app | https://github.com/nousantx/tenoxui
+ * Copyright (c) 2023 NOuSantx
+ * License : https://github.com/NOuSantx/tenoxui/blob/main/LICENSE
+ * Maintained by NOuSantx
+ */:root{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;--ireng:#000;--sego:#fff;--transparent:#00000000;--peler:#ffffff;--shade-1:#111;--shade-2:#222;--shade-3:#333;--shade-4:#444;--shade-5:#555;--shade-6:#666;--shade-7:#777;--shade-8:#888;--shade-9:#999;--shade-10:#aaa;--shade-11:#bbb;--shade-12:#ccc;--shade-13:#ddd;--shade-14:#eee;--opa-1:0.1;--opa-2:0.2;--opa-3:0.3;--opa-4:0.4;--opa-5:0.5;--opa-6:0.6;--opa-7:0.7;--opa-8:0.8;--opa-9:0.9;--opa-10:1;--right:to right;--left:to left;--top:to top;--bottom:to bottom;--tenox_gradient_direction:331deg;--over-primary-template:var(--primary),var(--transparent);--overlay:var(--overlay_color),var(--transparent);--overlay-top:linear-gradient(var(--bottom), var(--overlay));--overlay-down:linear-gradient(var(--top), var(--overlay));--overlay-left:linear-gradient(var(--right), var(--overlay));--overlay-right:linear-gradient(var(--left), var(--overlay))}
