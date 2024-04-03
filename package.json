@@ -2,13 +2,12 @@
   "name": "@tenoxui/component",
   "version": "0.0.2",
   "description": "TenoxUI component for web developement.",
-  "main": "dist/js/property.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nousantx/tenoxui-component.git"
+    "url": "git+https://github.com/tenoxui/components.git"
   },
   "keywords": [
     "css",
@@ -20,7 +19,10 @@
   "author": "nousantx",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nousantx/tenoxui-component/issues"
+    "url": "https://github.com/tenoxui/components/issues"
   },
-  "homepage": "https://github.com/nousantx/tenoxui-component"
+  "homepage": "https://github.com/tenoxui/components",
+  "devDependencies": {
+    "tenoxui": "^0.6.1"
+  }
 }

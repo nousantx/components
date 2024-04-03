@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Styles</title>
+    <script src="https://cdn.jsdelivr.net/npm/tenoxui"></script>
+    <style>
+      /* Common button styles */
+      :root {
+        --tx_inline-block: inline-block;
+        --tx_primary: #007bff;
+        --tx_secondary: #6c757d;
+        --tx_danger: #dc3545;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Example buttons -->
+    <button class="btn btn-primary">Btn Primary Button</button>
+    <button class="btn btn-primary rounded">Rounded Button</button>
+    <button class="btn btn-primary rounded-full">Full Round Button</button>
+
+    <button class="btn btn-secondary">Secondary Button</button>
+    <button class="btn btn-secondary rounded">Rounded Button</button>
+    <button class="btn btn-secondary rounded-full">Full Round Button</button>
+
+    <button class="btn btn-danger">Danger Button</button>
+    <button class="btn btn-danger rounded">Rounded Button</button>
+    <button class="btn btn-danger rounded-full">Full Round Button</button>
+
+    <script src="/Button/index.js"></script>
+    <script>
+      makeStyles(button);
+      tenoxui();
+    </script>
+  </body>
+</html>
