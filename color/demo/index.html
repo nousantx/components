@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Styles</title>
+    <link rel="stylesheet" href="../color.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        /* Primary: Qing Dynasty Dragon */
+        --mine-100: #f4f2ff;
+        --mine-200: #cac7ff;
+        --mine-300: #9b9cfc;
+        --mine-400: #6d77f4;
+        --mine-500: #4056e6;
+        --mine-600: #1e3bb6;
+        --mine-700: #0e2c86;
+        --mine-800: #071f56;
+        --mine-900: #031026;
+
+        /* second: Becquerel */
+        --second-100: #f2fff4;
+        --second-200: #c1ffc4;
+        --second-300: #91fd8f;
+        --second-400: #68f95d;
+        --second-500: #45f02b;
+        --second-600: #30bd0e;
+        --second-700: #258b03;
+        --second-800: #1b5900;
+        --second-900: #0e2600;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Gabarito", sans-serif;
+      }
+
+      code {
+        font-family: monospace;
+      }
+    </style>
+    <script src="../../all/tui.min.js"></script>
+  </head>
+  <body class="bg-white h-mn-100vh p-10vw d-flex jc-center">
+    <main class="">
+      <h1>Color Pallete</h1>
+      <p class="ta-justify text-neutral-800">
+        Make your own palette. The palette must have 9 color per variant, such
+        as:
+        <code>primary-100</code> to <code>primary-900</code>
+      </p>
+      <h2 class="fs-1.4rem fw-500 mt-1rem mb-8px">Custom Color</h2>
+      <div class="color-variant flex-wrap gap-10px">
+        <!-- Primary Color -->
+        <div class="bg-mine-100"></div>
+        <div class="bg-mine-200"></div>
+        <div class="bg-mine-300"></div>
+        <div class="bg-mine-400"></div>
+        <div class="bg-mine-500"></div>
+        <div class="bg-mine-600"></div>
+        <div class="bg-mine-700"></div>
+        <div class="bg-mine-800"></div>
+        <div class="bg-mine-900"></div>
+      </div>
+      <h2 class="fs-1.4rem fw-500 mv-8px">Primary</h2>
+      <div class="color-variant flex-wrap gap-10px">
+        <!-- Primary Color -->
+        <div class="bg-primary-100"></div>
+        <div class="bg-primary-200"></div>
+        <div class="bg-primary-300"></div>
+        <div class="bg-primary-400"></div>
+        <div class="bg-primary-500"></div>
+        <div class="bg-primary-600"></div>
+        <div class="bg-primary-700"></div>
+        <div class="bg-primary-800"></div>
+        <div class="bg-primary-900"></div>
+      </div>
+      <!-- Accent Color -->
+      <h2 class="fs-1.4rem fw-500 mv-8px">Accent</h2>
+      <div class="color-variant flex-wrap gap-10px">
+        <div class="bg-accent-100"></div>
+        <div class="bg-accent-200"></div>
+        <div class="bg-accent-300"></div>
+        <div class="bg-accent-400"></div>
+        <div class="bg-accent-500"></div>
+        <div class="bg-accent-600"></div>
+        <div class="bg-accent-700"></div>
+        <div class="bg-accent-800"></div>
+        <div class="bg-accent-900"></div>
+      </div>
+      <h2 class="fs-1.4rem fw-500 mv-8px">Info</h2>
+      <!-- Info Color -->
+      <div class="color-variant flex-wrap gap-10px">
+        <div class="bg-info-100"></div>
+        <div class="bg-info-200"></div>
+        <div class="bg-info-300"></div>
+        <div class="bg-info-400"></div>
+        <div class="bg-info-500"></div>
+        <div class="bg-info-600"></div>
+        <div class="bg-info-700"></div>
+        <div class="bg-info-800"></div>
+        <div class="bg-info-900"></div>
+      </div>
+      <h2 class="fs-1.4rem fw-500 mv-8px">Success</h2>
+      <!-- Success Color -->
+      <div class="color-variant flex-wrap gap-10px">
+        <div class="bg-success-100"></div>
+        <div class="bg-success-200"></div>
+        <div class="bg-success-300"></div>
+        <div class="bg-success-400"></div>
+        <div class="bg-success-500"></div>
+        <div class="bg-success-600"></div>
+        <div class="bg-success-700"></div>
+        <div class="bg-success-800"></div>
+        <div class="bg-success-900"></div>
+      </div>
+      <h2 class="fs-1.4rem fw-500 mv-8px">Warning</h2>
+      <!-- Warning Color -->
+      <div class="color-variant flex-wrap gap-10px">
+        <div class="bg-warning-100"></div>
+        <div class="bg-warning-200"></div>
+        <div class="bg-warning-300"></div>
+        <div class="bg-warning-400"></div>
+        <div class="bg-warning-500"></div>
+        <div class="bg-warning-600"></div>
+        <div class="bg-warning-700"></div>
+        <div class="bg-warning-800"></div>
+        <div class="bg-warning-900"></div>
+      </div>
+      <h2 class="fs-1.4rem fw-500 mv-8px">Danger</h2>
+      <!-- Danger Color -->
+      <div class="color-variant flex-wrap gap-10px">
+        <div class="bg-danger-100"></div>
+        <div class="bg-danger-200"></div>
+        <div class="bg-danger-300"></div>
+        <div class="bg-danger-400"></div>
+        <div class="bg-danger-500"></div>
+        <div class="bg-danger-600"></div>
+        <div class="bg-danger-700"></div>
+        <div class="bg-danger-800"></div>
+        <div class="bg-danger-900"></div>
+      </div>
+      <!-- Neutral Color -->
+      <h2 class="fs-1.4rem fw-500 mv-8px">Neutral</h2>
+      <div class="color-variant flex-wrap gap-10px">
+        <div class="bg-neutral-100"></div>
+        <div class="bg-neutral-200"></div>
+        <div class="bg-neutral-300"></div>
+        <div class="bg-neutral-400"></div>
+        <div class="bg-neutral-500"></div>
+        <div class="bg-neutral-600"></div>
+        <div class="bg-neutral-700"></div>
+        <div class="bg-neutral-800"></div>
+        <div class="bg-neutral-900"></div>
+      </div>
+    </main>
+    <script>
+      defineProps({
+        d: "display",
+        bdr: "border",
+        bc: "borderColor",
+        "back-c": "backgroundColor",
+      });
+
+      makeStyles({
+        code: "bg-[neutral-300] tc-[neutral-900] ph-6px pv-3px fw-500 br-3px",
+        ".flex-wrap": "d-flex fx-wrap-wrap",
+        ".color-variant > div": "box-50px cursor-pointer",
+      });
+
+      tenoxui();
+    </script>
+    <script src="../color.min.js"></script>
+    <script>
+      makeColor([
+        "mine",
+        "second",
+        "primary",
+        "accent",
+        "info",
+        "success",
+        "warning",
+        "danger",
+        "neutral",
+      ]);
+    </script>
+  </body>
+</html>
