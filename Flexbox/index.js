@@ -1,1 +1,3 @@
-console.log("Flexbox Component");
+makeStyles({
+  ".flex": "d-flex",
+});
