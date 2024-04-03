@@ -1,3 +1,0 @@
-makeStyles({
-  ".flex": "d-flex",
-});
