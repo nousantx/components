@@ -1,0 +1,3 @@
+makeStyles({
+  ".flex": "d-flex",
+});
