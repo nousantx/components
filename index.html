@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Button Styles</title>
+    <link rel="stylesheet" href="./color/color.css" />
     <script src="https://cdn.jsdelivr.net/npm/tenoxui"></script>
     <style>
       /* Common button styles */
@@ -13,25 +14,168 @@
         --tx_secondary: #6c757d;
         --tx_danger: #dc3545;
       }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Sans-Serif;
+      }
     </style>
   </head>
-  <body>
-    <!-- Example buttons -->
-    <button class="btn btn-primary">Btn Primary Button</button>
-    <button class="btn btn-primary rounded">Rounded Button</button>
-    <button class="btn btn-primary rounded-full">Full Round Button</button>
+  <body class="p-10vw">
+    <h1>Button Variant</h1>
 
-    <button class="btn btn-secondary">Secondary Button</button>
-    <button class="btn btn-secondary rounded">Rounded Button</button>
-    <button class="btn btn-secondary rounded-full">Full Round Button</button>
+    <h2 class="fs-1.4rem fw-500 mv-2rem">Primary Color</h2>
+    <div class="flex-wrap gap-1rem">
+      <button class="btn btn-primary-500">Button</button>
+      <button class="btn btn-primary-500 rounded-md">Rounded Button</button>
+      <button class="btn btn-primary-500 rounded-full">
+        Full Round Button
+      </button>
+    </div>
 
-    <button class="btn btn-danger">Danger Button</button>
-    <button class="btn btn-danger rounded">Rounded Button</button>
-    <button class="btn btn-danger rounded-full">Full Round Button</button>
+    <h2 class="fs-1.4rem fw-500 mv-2rem">Accent Color</h2>
+    <div class="flex-wrap gap-1rem">
+      <button class="btn btn-accent-500">Button</button>
+      <button class="btn btn-accent-500 rounded-md">Rounded Button</button>
+      <button class="btn btn-accent-500 rounded-full">Full Round Button</button>
+    </div>
 
-    <script src="/Button/index.js"></script>
+    <h2 class="fs-1.4rem fw-500 mv-2rem">Info Color</h2>
+    <div class="flex-wrap gap-1rem">
+      <button class="btn btn-info-500">Button</button>
+      <button class="btn btn-info-500 rounded-md">Rounded Button</button>
+      <button class="btn btn-info-500 rounded-full">Full Round Button</button>
+    </div>
+
+    <h2 class="fs-1.4rem fw-500 mv-2rem">Success Color</h2>
+
+    <div class="flex-wrap gap-1rem">
+      <button class="btn btn-success-500">Button</button>
+      <button class="btn btn-success-500 rounded-md">Rounded Button</button>
+      <button class="btn btn-success-500 rounded-full">
+        Full Round Button
+      </button>
+    </div>
+
+    <h2 class="fs-1.4rem fw-500 mv-2rem">Warning Color</h2>
+
+    <div class="flex-wrap gap-1rem">
+      <button class="btn btn-warning-500">Button</button>
+      <button class="btn btn-warning-500 rounded-md">Rounded Button</button>
+      <button class="btn btn-warning-500 rounded-full">
+        Full Round Button
+      </button>
+    </div>
+
+    <h2 class="fs-1.4rem fw-500 mv-2rem">Danger Color</h2>
+
+    <div class="flex-wrap gap-1rem">
+      <button class="btn btn-danger-500">Button</button>
+      <button class="btn btn-danger-500 rounded-md">Rounded Button</button>
+      <button class="btn btn-danger-500 rounded-full">Full Round Button</button>
+    </div>
+
+    <h1 class="mt-2rem">Color</h1>
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Primary</h2>
+    <div class="flex-wrap gap-10px">
+      <!-- Primary Color -->
+      <div class="box-2rem bg-primary-100"></div>
+      <div class="box-2rem bg-primary-200"></div>
+      <div class="box-2rem bg-primary-300"></div>
+      <div class="box-2rem bg-primary-400"></div>
+      <div class="box-2rem bg-primary-500"></div>
+      <div class="box-2rem bg-primary-600"></div>
+      <div class="box-2rem bg-primary-700"></div>
+      <div class="box-2rem bg-primary-800"></div>
+      <div class="box-2rem bg-primary-900"></div>
+    </div>
+    <!-- Accent Color -->
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Accent</h2>
+    <div class="flex-wrap gap-10px">
+      <div class="box-2rem bg-accent-100"></div>
+      <div class="box-2rem bg-accent-200"></div>
+      <div class="box-2rem bg-accent-300"></div>
+      <div class="box-2rem bg-accent-400"></div>
+      <div class="box-2rem bg-accent-500"></div>
+      <div class="box-2rem bg-accent-600"></div>
+      <div class="box-2rem bg-accent-700"></div>
+      <div class="box-2rem bg-accent-800"></div>
+      <div class="box-2rem bg-accent-900"></div>
+    </div>
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Info</h2>
+    <!-- Info Color -->
+    <div class="flex-wrap gap-10px">
+      <div class="box-2rem bg-info-100"></div>
+      <div class="box-2rem bg-info-200"></div>
+      <div class="box-2rem bg-info-300"></div>
+      <div class="box-2rem bg-info-400"></div>
+      <div class="box-2rem bg-info-500"></div>
+      <div class="box-2rem bg-info-600"></div>
+      <div class="box-2rem bg-info-700"></div>
+      <div class="box-2rem bg-info-800"></div>
+      <div class="box-2rem bg-info-900"></div>
+    </div>
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Success</h2>
+    <!-- Success Color -->
+    <div class="flex-wrap gap-10px">
+      <div class="box-2rem bg-success-100"></div>
+      <div class="box-2rem bg-success-200"></div>
+      <div class="box-2rem bg-success-300"></div>
+      <div class="box-2rem bg-success-400"></div>
+      <div class="box-2rem bg-success-500"></div>
+      <div class="box-2rem bg-success-600"></div>
+      <div class="box-2rem bg-success-700"></div>
+      <div class="box-2rem bg-success-800"></div>
+      <div class="box-2rem bg-success-900"></div>
+    </div>
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Warning</h2>
+    <!-- Warning Color -->
+    <div class="flex-wrap gap-10px">
+      <div class="box-2rem bg-warning-100"></div>
+      <div class="box-2rem bg-warning-200"></div>
+      <div class="box-2rem bg-warning-300"></div>
+      <div class="box-2rem bg-warning-400"></div>
+      <div class="box-2rem bg-warning-500"></div>
+      <div class="box-2rem bg-warning-600"></div>
+      <div class="box-2rem bg-warning-700"></div>
+      <div class="box-2rem bg-warning-800"></div>
+      <div class="box-2rem bg-warning-900"></div>
+    </div>
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Danger</h2>
+    <!-- Danger Color -->
+    <div class="flex-wrap gap-10px">
+      <div class="box-2rem bg-danger-100"></div>
+      <div class="box-2rem bg-danger-200"></div>
+      <div class="box-2rem bg-danger-300"></div>
+      <div class="box-2rem bg-danger-400"></div>
+      <div class="box-2rem bg-danger-500"></div>
+      <div class="box-2rem bg-danger-600"></div>
+      <div class="box-2rem bg-danger-700"></div>
+      <div class="box-2rem bg-danger-800"></div>
+      <div class="box-2rem bg-danger-900"></div>
+    </div>
+    <!-- Neutral Color -->
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Neutral</h2>
+    <div class="flex-wrap gap-10px">
+      <div class="box-2rem bg-neutral-100"></div>
+      <div class="box-2rem bg-neutral-200"></div>
+      <div class="box-2rem bg-neutral-300"></div>
+      <div class="box-2rem bg-neutral-400"></div>
+      <div class="box-2rem bg-neutral-500"></div>
+      <div class="box-2rem bg-neutral-600"></div>
+      <div class="box-2rem bg-neutral-700"></div>
+      <div class="box-2rem bg-neutral-800"></div>
+      <div class="box-2rem bg-neutral-900"></div>
+    </div>
+
+    <script src="./props/props.js"></script>
+    <script src="./button/index.js"></script>
+    <script src="./color/color.js"></script>
     <script>
-      makeStyles(button);
+      makeStyles({
+        ".flex-wrap": "d-flex fx-wrap-wrap",
+      });
       tenoxui();
     </script>
   </body>
