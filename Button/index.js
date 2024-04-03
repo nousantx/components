@@ -12,7 +12,4 @@ const button = {
   ".btn-danger": "bg-[tx_danger]",
 };
 
-defineProps({
-  bdr: "border",
-  bc: "borderColor",
-});
+makeStyles(button); // apply button styles
