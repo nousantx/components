@@ -1,11 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Button Styles</title>
     <link rel="stylesheet" href="./color/color.css" />
-    <script src="https://cdn.jsdelivr.net/npm/tenoxui"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
     <style>
       /* Common button styles */
       :root {
@@ -18,14 +23,15 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: Sans-Serif;
+        font-family: "Gabarito", sans-serif;
       }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/tenoxui"></script>
   </head>
-  <body class="p-10vw">
+  <body class="bg-white p-10vw">
     <h1>Button Variant</h1>
 
-    <h2 class="fs-1.4rem fw-500 mv-2rem">Primary Color</h2>
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Primary Button</h2>
     <div class="flex-wrap gap-1rem">
       <button class="btn btn-primary-500">Button</button>
       <button class="btn btn-primary-500 rounded-md">Rounded Button</button>
@@ -34,21 +40,21 @@
       </button>
     </div>
 
-    <h2 class="fs-1.4rem fw-500 mv-2rem">Accent Color</h2>
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Accent Button</h2>
     <div class="flex-wrap gap-1rem">
       <button class="btn btn-accent-500">Button</button>
       <button class="btn btn-accent-500 rounded-md">Rounded Button</button>
       <button class="btn btn-accent-500 rounded-full">Full Round Button</button>
     </div>
 
-    <h2 class="fs-1.4rem fw-500 mv-2rem">Info Color</h2>
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Info Button</h2>
     <div class="flex-wrap gap-1rem">
       <button class="btn btn-info-500">Button</button>
       <button class="btn btn-info-500 rounded-md">Rounded Button</button>
       <button class="btn btn-info-500 rounded-full">Full Round Button</button>
     </div>
 
-    <h2 class="fs-1.4rem fw-500 mv-2rem">Success Color</h2>
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Success Button</h2>
 
     <div class="flex-wrap gap-1rem">
       <button class="btn btn-success-500">Button</button>
@@ -58,7 +64,7 @@
       </button>
     </div>
 
-    <h2 class="fs-1.4rem fw-500 mv-2rem">Warning Color</h2>
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Warning Button</h2>
 
     <div class="flex-wrap gap-1rem">
       <button class="btn btn-warning-500">Button</button>
@@ -68,7 +74,7 @@
       </button>
     </div>
 
-    <h2 class="fs-1.4rem fw-500 mv-2rem">Danger Color</h2>
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Danger Button</h2>
 
     <div class="flex-wrap gap-1rem">
       <button class="btn btn-danger-500">Button</button>
@@ -77,106 +83,125 @@
     </div>
 
     <h1 class="mt-2rem">Color</h1>
-    <h2 class="fs-1.4rem fw-500 mv-1rem">Primary</h2>
-    <div class="flex-wrap gap-10px">
+    <h2 class="fs-1.4rem fw-500 mv-8px">Primary</h2>
+    <div class="color-variant flex-wrap gap-10px">
       <!-- Primary Color -->
-      <div class="box-2rem bg-primary-100"></div>
-      <div class="box-2rem bg-primary-200"></div>
-      <div class="box-2rem bg-primary-300"></div>
-      <div class="box-2rem bg-primary-400"></div>
-      <div class="box-2rem bg-primary-500"></div>
-      <div class="box-2rem bg-primary-600"></div>
-      <div class="box-2rem bg-primary-700"></div>
-      <div class="box-2rem bg-primary-800"></div>
-      <div class="box-2rem bg-primary-900"></div>
+      <div class="bg-primary-100"></div>
+      <div class="bg-primary-200"></div>
+      <div class="bg-primary-300"></div>
+      <div class="bg-primary-400"></div>
+      <div class="bg-primary-500"></div>
+      <div class="bg-primary-600"></div>
+      <div class="bg-primary-700"></div>
+      <div class="bg-primary-800"></div>
+      <div class="bg-primary-900"></div>
     </div>
     <!-- Accent Color -->
-    <h2 class="fs-1.4rem fw-500 mv-1rem">Accent</h2>
-    <div class="flex-wrap gap-10px">
-      <div class="box-2rem bg-accent-100"></div>
-      <div class="box-2rem bg-accent-200"></div>
-      <div class="box-2rem bg-accent-300"></div>
-      <div class="box-2rem bg-accent-400"></div>
-      <div class="box-2rem bg-accent-500"></div>
-      <div class="box-2rem bg-accent-600"></div>
-      <div class="box-2rem bg-accent-700"></div>
-      <div class="box-2rem bg-accent-800"></div>
-      <div class="box-2rem bg-accent-900"></div>
+    <h2 class="fs-1.4rem fw-500 mv-8px">Accent</h2>
+    <div class="color-variant flex-wrap gap-10px">
+      <div class="bg-accent-100"></div>
+      <div class="bg-accent-200"></div>
+      <div class="bg-accent-300"></div>
+      <div class="bg-accent-400"></div>
+      <div class="bg-accent-500"></div>
+      <div class="bg-accent-600"></div>
+      <div class="bg-accent-700"></div>
+      <div class="bg-accent-800"></div>
+      <div class="bg-accent-900"></div>
     </div>
-    <h2 class="fs-1.4rem fw-500 mv-1rem">Info</h2>
+    <h2 class="fs-1.4rem fw-500 mv-8px">Info</h2>
     <!-- Info Color -->
-    <div class="flex-wrap gap-10px">
-      <div class="box-2rem bg-info-100"></div>
-      <div class="box-2rem bg-info-200"></div>
-      <div class="box-2rem bg-info-300"></div>
-      <div class="box-2rem bg-info-400"></div>
-      <div class="box-2rem bg-info-500"></div>
-      <div class="box-2rem bg-info-600"></div>
-      <div class="box-2rem bg-info-700"></div>
-      <div class="box-2rem bg-info-800"></div>
-      <div class="box-2rem bg-info-900"></div>
+    <div class="color-variant flex-wrap gap-10px">
+      <div class="bg-info-100"></div>
+      <div class="bg-info-200"></div>
+      <div class="bg-info-300"></div>
+      <div class="bg-info-400"></div>
+      <div class="bg-info-500"></div>
+      <div class="bg-info-600"></div>
+      <div class="bg-info-700"></div>
+      <div class="bg-info-800"></div>
+      <div class="bg-info-900"></div>
     </div>
-    <h2 class="fs-1.4rem fw-500 mv-1rem">Success</h2>
+    <h2 class="fs-1.4rem fw-500 mv-8px">Success</h2>
     <!-- Success Color -->
-    <div class="flex-wrap gap-10px">
-      <div class="box-2rem bg-success-100"></div>
-      <div class="box-2rem bg-success-200"></div>
-      <div class="box-2rem bg-success-300"></div>
-      <div class="box-2rem bg-success-400"></div>
-      <div class="box-2rem bg-success-500"></div>
-      <div class="box-2rem bg-success-600"></div>
-      <div class="box-2rem bg-success-700"></div>
-      <div class="box-2rem bg-success-800"></div>
-      <div class="box-2rem bg-success-900"></div>
+    <div class="color-variant flex-wrap gap-10px">
+      <div class="bg-success-100"></div>
+      <div class="bg-success-200"></div>
+      <div class="bg-success-300"></div>
+      <div class="bg-success-400"></div>
+      <div class="bg-success-500"></div>
+      <div class="bg-success-600"></div>
+      <div class="bg-success-700"></div>
+      <div class="bg-success-800"></div>
+      <div class="bg-success-900"></div>
     </div>
-    <h2 class="fs-1.4rem fw-500 mv-1rem">Warning</h2>
+    <h2 class="fs-1.4rem fw-500 mv-8px">Warning</h2>
     <!-- Warning Color -->
-    <div class="flex-wrap gap-10px">
-      <div class="box-2rem bg-warning-100"></div>
-      <div class="box-2rem bg-warning-200"></div>
-      <div class="box-2rem bg-warning-300"></div>
-      <div class="box-2rem bg-warning-400"></div>
-      <div class="box-2rem bg-warning-500"></div>
-      <div class="box-2rem bg-warning-600"></div>
-      <div class="box-2rem bg-warning-700"></div>
-      <div class="box-2rem bg-warning-800"></div>
-      <div class="box-2rem bg-warning-900"></div>
+    <div class="color-variant flex-wrap gap-10px">
+      <div class="bg-warning-100"></div>
+      <div class="bg-warning-200"></div>
+      <div class="bg-warning-300"></div>
+      <div class="bg-warning-400"></div>
+      <div class="bg-warning-500"></div>
+      <div class="bg-warning-600"></div>
+      <div class="bg-warning-700"></div>
+      <div class="bg-warning-800"></div>
+      <div class="bg-warning-900"></div>
     </div>
-    <h2 class="fs-1.4rem fw-500 mv-1rem">Danger</h2>
+    <h2 class="fs-1.4rem fw-500 mv-8px">Danger</h2>
     <!-- Danger Color -->
-    <div class="flex-wrap gap-10px">
-      <div class="box-2rem bg-danger-100"></div>
-      <div class="box-2rem bg-danger-200"></div>
-      <div class="box-2rem bg-danger-300"></div>
-      <div class="box-2rem bg-danger-400"></div>
-      <div class="box-2rem bg-danger-500"></div>
-      <div class="box-2rem bg-danger-600"></div>
-      <div class="box-2rem bg-danger-700"></div>
-      <div class="box-2rem bg-danger-800"></div>
-      <div class="box-2rem bg-danger-900"></div>
+    <div class="color-variant flex-wrap gap-10px">
+      <div class="bg-danger-100"></div>
+      <div class="bg-danger-200"></div>
+      <div class="bg-danger-300"></div>
+      <div class="bg-danger-400"></div>
+      <div class="bg-danger-500"></div>
+      <div class="bg-danger-600"></div>
+      <div class="bg-danger-700"></div>
+      <div class="bg-danger-800"></div>
+      <div class="bg-danger-900"></div>
     </div>
     <!-- Neutral Color -->
-    <h2 class="fs-1.4rem fw-500 mv-1rem">Neutral</h2>
-    <div class="flex-wrap gap-10px">
-      <div class="box-2rem bg-neutral-100"></div>
-      <div class="box-2rem bg-neutral-200"></div>
-      <div class="box-2rem bg-neutral-300"></div>
-      <div class="box-2rem bg-neutral-400"></div>
-      <div class="box-2rem bg-neutral-500"></div>
-      <div class="box-2rem bg-neutral-600"></div>
-      <div class="box-2rem bg-neutral-700"></div>
-      <div class="box-2rem bg-neutral-800"></div>
-      <div class="box-2rem bg-neutral-900"></div>
+    <h2 class="fs-1.4rem fw-500 mv-8px">Neutral</h2>
+    <div class="color-variant flex-wrap gap-10px">
+      <div class="bg-neutral-100"></div>
+      <div class="bg-neutral-200"></div>
+      <div class="bg-neutral-300"></div>
+      <div class="bg-neutral-400"></div>
+      <div class="bg-neutral-500"></div>
+      <div class="bg-neutral-600"></div>
+      <div class="bg-neutral-700"></div>
+      <div class="bg-neutral-800"></div>
+      <div class="bg-neutral-900"></div>
     </div>
 
-    <script src="./props/props.js"></script>
-    <script src="./button/index.js"></script>
+    <script>
+      defineProps({
+        d: "display",
+        bdr: "border",
+        bc: "borderColor",
+        "back-c": "backgroundColor",
+      });
+      const btn = document.querySelectorAll(".btn");
+      btn.forEach((element) => {
+        const styler = new makeTenoxUI(element);
+        styler.applyMultiStyles(
+          "d-[tx_inline-block] pv-10px ph-20px fs-1em ta-center td-none cursor-pointer bdr-none br-0.125rem tr-prop-background tr-time-0.3s tr-timing-ease tc-white"
+        );
+      });
+
+      tenoxui();
+    </script>
+
+    <!-- <script src="./props/props.js"></script> -->
+    <!-- <script src="./button/index.js"></script> -->
     <script src="./color/color.js"></script>
     <script>
       makeStyles({
         ".flex-wrap": "d-flex fx-wrap-wrap",
+        ".color-variant > div":
+          "box-2rem bw-1px bc-[neutral-300] bs-solid cursor-pointer",
       });
-      tenoxui();
     </script>
   </body>
 </html>
