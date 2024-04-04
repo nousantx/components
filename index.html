@@ -1,207 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Button Styles</title>
+    <title>Modal Toggler</title>
     <link rel="stylesheet" href="./color/color.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
-      rel="stylesheet"
-    />
     <style>
-      /* Common button styles */
-      :root {
-        --tx_inline-block: inline-block;
-        --tx_primary: #007bff;
-        --tx_secondary: #6c757d;
-        --tx_danger: #dc3545;
-      }
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: "Gabarito", sans-serif;
+        font-family: sans-serif;
+      }
+      /* Modal Styles 
+
+      .modal-content {
+        
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 600px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+      }
+      */
+
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
       }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/tenoxui"></script>
   </head>
-  <body class="bg-white p-10vw">
-    <h1>Button Variant</h1>
+  <body class="bg-neutral-900">
+    <!-- Modal HTML -->
 
-    <h2 class="fs-1.4rem fw-500 mv-1rem">Primary Button</h2>
-    <div class="flex-wrap gap-1rem">
-      <button class="btn btn-primary-500">Button</button>
-      <button class="btn btn-primary-500 rounded-md">Rounded Button</button>
-      <button class="btn btn-primary-500 rounded-full">
-        Full Round Button
-      </button>
+    <div class="modal-danger d-none">
+      <span class="d-block fs-1.5rem mb-1rem">⚠️</span>
+      <h2>You're entering sudo mode!</h2>
+      <p>If you're not sure what you are doing, please close this session.</p>
     </div>
 
-    <h2 class="fs-1.4rem fw-500 mv-1rem">Accent Button</h2>
-    <div class="flex-wrap gap-1rem">
-      <button class="btn btn-accent-500">Button</button>
-      <button class="btn btn-accent-500 rounded-md">Rounded Button</button>
-      <button class="btn btn-accent-500 rounded-full">Full Round Button</button>
+    <div class="modal modal1">
+      <div class="modal-content modal-danger">
+        <span class="close">&times;</span>
+        <span class="d-block fs-1.5rem mb-1rem">⚠️</span>
+        <h2>You're entering sudo mode!</h2>
+        <p>If you're not sure what you are doing, please close this session.</p>
+      </div>
     </div>
 
-    <h2 class="fs-1.4rem fw-500 mv-1rem">Info Button</h2>
-    <div class="flex-wrap gap-1rem">
-      <button class="btn btn-info-500">Button</button>
-      <button class="btn btn-info-500 rounded-md">Rounded Button</button>
-      <button class="btn btn-info-500 rounded-full">Full Round Button</button>
+    <div class="modal modal2">
+      <div class="modal-content modal-info">
+        <span class="close">&times;</span>
+        <p>This is Modal 2. You can put any content here.</p>
+      </div>
     </div>
 
-    <h2 class="fs-1.4rem fw-500 mv-1rem">Success Button</h2>
-
-    <div class="flex-wrap gap-1rem">
-      <button class="btn btn-success-500">Button</button>
-      <button class="btn btn-success-500 rounded-md">Rounded Button</button>
-      <button class="btn btn-success-500 rounded-full">
-        Full Round Button
-      </button>
+    <div class="modal modal3">
+      <div class="modal-content modal-warning">
+        <span class="close">&times;</span>
+        <p>This is Modal 3. You can put any content here.</p>
+      </div>
     </div>
 
-    <h2 class="fs-1.4rem fw-500 mv-1rem">Warning Button</h2>
+    <!-- Button to Open the Modals -->
+    <button class="btn btn-danger-400 rounded" onclick="showModal('.modal1')">
+      Open Modal 1
+    </button>
+    <button class="btn btn-info-400 rounded" onclick="showModal('.modal2')">
+      Open Modal 2
+    </button>
+    <button class="btn btn-warning-400 rounded" onclick="showModal('.modal3')">
+      Open Modal 3
+    </button>
 
-    <div class="flex-wrap gap-1rem">
-      <button class="btn btn-warning-500">Button</button>
-      <button class="btn btn-warning-500 rounded-md">Rounded Button</button>
-      <button class="btn btn-warning-500 rounded-full">
-        Full Round Button
-      </button>
-    </div>
-
-    <h2 class="fs-1.4rem fw-500 mv-1rem">Danger Button</h2>
-
-    <div class="flex-wrap gap-1rem">
-      <button class="btn btn-danger-500">Button</button>
-      <button class="btn btn-danger-500 rounded-md">Rounded Button</button>
-      <button class="btn btn-danger-500 rounded-full">Full Round Button</button>
-    </div>
-
-    <h1 class="mt-2rem">Color</h1>
-    <h2 class="fs-1.4rem fw-500 mv-8px">Primary</h2>
-    <div class="color-variant flex-wrap gap-10px">
-      <!-- Primary Color -->
-      <div class="bg-primary-100"></div>
-      <div class="bg-primary-200"></div>
-      <div class="bg-primary-300"></div>
-      <div class="bg-primary-400"></div>
-      <div class="bg-primary-500"></div>
-      <div class="bg-primary-600"></div>
-      <div class="bg-primary-700"></div>
-      <div class="bg-primary-800"></div>
-      <div class="bg-primary-900"></div>
-    </div>
-    <!-- Accent Color -->
-    <h2 class="fs-1.4rem fw-500 mv-8px">Accent</h2>
-    <div class="color-variant flex-wrap gap-10px">
-      <div class="bg-accent-100"></div>
-      <div class="bg-accent-200"></div>
-      <div class="bg-accent-300"></div>
-      <div class="bg-accent-400"></div>
-      <div class="bg-accent-500"></div>
-      <div class="bg-accent-600"></div>
-      <div class="bg-accent-700"></div>
-      <div class="bg-accent-800"></div>
-      <div class="bg-accent-900"></div>
-    </div>
-    <h2 class="fs-1.4rem fw-500 mv-8px">Info</h2>
-    <!-- Info Color -->
-    <div class="color-variant flex-wrap gap-10px">
-      <div class="bg-info-100"></div>
-      <div class="bg-info-200"></div>
-      <div class="bg-info-300"></div>
-      <div class="bg-info-400"></div>
-      <div class="bg-info-500"></div>
-      <div class="bg-info-600"></div>
-      <div class="bg-info-700"></div>
-      <div class="bg-info-800"></div>
-      <div class="bg-info-900"></div>
-    </div>
-    <h2 class="fs-1.4rem fw-500 mv-8px">Success</h2>
-    <!-- Success Color -->
-    <div class="color-variant flex-wrap gap-10px">
-      <div class="bg-success-100"></div>
-      <div class="bg-success-200"></div>
-      <div class="bg-success-300"></div>
-      <div class="bg-success-400"></div>
-      <div class="bg-success-500"></div>
-      <div class="bg-success-600"></div>
-      <div class="bg-success-700"></div>
-      <div class="bg-success-800"></div>
-      <div class="bg-success-900"></div>
-    </div>
-    <h2 class="fs-1.4rem fw-500 mv-8px">Warning</h2>
-    <!-- Warning Color -->
-    <div class="color-variant flex-wrap gap-10px">
-      <div class="bg-warning-100"></div>
-      <div class="bg-warning-200"></div>
-      <div class="bg-warning-300"></div>
-      <div class="bg-warning-400"></div>
-      <div class="bg-warning-500"></div>
-      <div class="bg-warning-600"></div>
-      <div class="bg-warning-700"></div>
-      <div class="bg-warning-800"></div>
-      <div class="bg-warning-900"></div>
-    </div>
-    <h2 class="fs-1.4rem fw-500 mv-8px">Danger</h2>
-    <!-- Danger Color -->
-    <div class="color-variant flex-wrap gap-10px">
-      <div class="bg-danger-100"></div>
-      <div class="bg-danger-200"></div>
-      <div class="bg-danger-300"></div>
-      <div class="bg-danger-400"></div>
-      <div class="bg-danger-500"></div>
-      <div class="bg-danger-600"></div>
-      <div class="bg-danger-700"></div>
-      <div class="bg-danger-800"></div>
-      <div class="bg-danger-900"></div>
-    </div>
-    <!-- Neutral Color -->
-    <h2 class="fs-1.4rem fw-500 mv-8px">Neutral</h2>
-    <div class="color-variant flex-wrap gap-10px">
-      <div class="bg-neutral-100"></div>
-      <div class="bg-neutral-200"></div>
-      <div class="bg-neutral-300"></div>
-      <div class="bg-neutral-400"></div>
-      <div class="bg-neutral-500"></div>
-      <div class="bg-neutral-600"></div>
-      <div class="bg-neutral-700"></div>
-      <div class="bg-neutral-800"></div>
-      <div class="bg-neutral-900"></div>
-    </div>
-
-    <script>
-      defineProps({
-        d: "display",
-        bdr: "border",
-        bc: "borderColor",
-        "back-c": "backgroundColor",
-      });
-      const btn = document.querySelectorAll(".btn");
-      btn.forEach((element) => {
-        const styler = new makeTenoxUI(element);
-        styler.applyMultiStyles(
-          "d-[tx_inline-block] pv-10px ph-20px fs-1em ta-center td-none cursor-pointer bdr-none br-0.125rem tr-prop-background tr-time-0.3s tr-timing-ease tc-white"
-        );
-      });
-
-      tenoxui();
-    </script>
-
-    <!-- <script src="./props/props.js"></script> -->
-    <!-- <script src="./button/index.js"></script> -->
-    <script src="./color/color.js"></script>
+    <script src="./props/props.js"></script>
     <script>
       makeStyles({
-        ".flex-wrap": "d-flex fx-wrap-wrap",
-        ".color-variant > div":
-          "box-2rem bw-1px bc-[neutral-300] bs-solid cursor-pointer",
+        ".modal": "d-none position-fixed z-1 t-0 l-0 box-100% bg-#00000040",
+        ".modal-content":
+          "p-2rem br-0.25rem mv-15% mh-auto w-80% w-mx-600px bw-1px bs-solid  text-[neutral-100]",
+        ".modal-danger": "bg-#87010160 bc-[danger-400]",
+        ".modal-info": "bg-#01688760 bc-[info-400]",
+        ".modal-sucess": "bg-#40870160 bc-[success-400]",
+        ".modal-warning": "bg-#87640160 bc-[warning-400]"
       });
+      tenoxui();
     </script>
+    <script src="./button/index.js"></script>
+    <script src="./modals/index.js"></script>
+    <script src="./color/color.js"></script>
   </body>
 </html>
