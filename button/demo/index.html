@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Styles</title>
+    <link rel="stylesheet" href="../../color/color.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Common button styles */
+      :root {
+        --tx_inline-block: inline-block;
+        --tx_primary: #007bff;
+        --tx_secondary: #6c757d;
+        --tx_danger: #dc3545;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Gabarito", sans-serif;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/tenoxui"></script>
+  </head>
+  <body class="bg-white p-10vw">
+    <h1>Button Variant</h1>
+
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Primary Button</h2>
+    <div class="flex-wrap gap-1rem">
+      <button class="btn btn-primary-500">Button</button>
+      <button class="btn btn-primary-500 rounded-md">Rounded Button</button>
+      <button class="btn btn-primary-500 rounded-full">
+        Full Round Button
+      </button>
+    </div>
+
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Accent Button</h2>
+    <div class="flex-wrap gap-1rem">
+      <button class="btn btn-accent-500">Button</button>
+      <button class="btn btn-accent-500 rounded-md">Rounded Button</button>
+      <button class="btn btn-accent-500 rounded-full">Full Round Button</button>
+    </div>
+
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Info Button</h2>
+    <div class="flex-wrap gap-1rem">
+      <button class="btn btn-info-500">Button</button>
+      <button class="btn btn-info-500 rounded-md">Rounded Button</button>
+      <button class="btn btn-info-500 rounded-full">Full Round Button</button>
+    </div>
+
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Success Button</h2>
+
+    <div class="flex-wrap gap-1rem">
+      <button class="btn btn-success-500">Button</button>
+      <button class="btn btn-success-500 rounded-md">Rounded Button</button>
+      <button class="btn btn-success-500 rounded-full">
+        Full Round Button
+      </button>
+    </div>
+
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Warning Button</h2>
+
+    <div class="flex-wrap gap-1rem">
+      <button class="btn btn-warning-500">Button</button>
+      <button class="btn btn-warning-500 rounded-md">Rounded Button</button>
+      <button class="btn btn-warning-500 rounded-full">
+        Full Round Button
+      </button>
+    </div>
+
+    <h2 class="fs-1.4rem fw-500 mv-1rem">Danger Button</h2>
+
+    <div class="flex-wrap gap-1rem">
+      <button class="btn btn-danger-500">Button</button>
+      <button class="btn btn-danger-500 rounded-md">Rounded Button</button>
+      <button class="btn btn-danger-500 rounded-full">Full Round Button</button>
+    </div>
+
+    <script>
+      defineProps({
+        d: "display",
+        bdr: "border",
+        bc: "borderColor",
+        "back-c": "backgroundColor",
+      });
+      const btn = document.querySelectorAll(".btn");
+      btn.forEach((element) => {
+        const styler = new makeTenoxUI(element);
+        styler.applyMultiStyles(
+          "d-[tx_inline-block] pv-10px ph-20px fs-1em ta-center td-none cursor-pointer bdr-none br-0.125rem tr-prop-background tr-time-0.3s tr-timing-ease tc-white"
+        );
+      });
+
+      tenoxui();
+    </script>
+    <!-- All Color -->
+    <script src="../../color/color.js"></script>
+    <script>
+      makeStyles({
+        ".flex-wrap": "d-flex fx-wrap-wrap",
+        ".color-variant > div":
+          "box-2rem bw-1px bc-[neutral-300] bs-solid cursor-pointer",
+      });
+    </script>
+  </body>
+</html>

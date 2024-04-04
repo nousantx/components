@@ -7,9 +7,6 @@ const button = {
   ".rounded-lg": "br-0.5rem",
   ".rounded-xl": "br-0.75rem",
   ".rounded-full": "br-9999px",
-  ".btn-primary": "bg-[tx_primary]",
-  ".btn-secondary": "bg-[tx_secondary]",
-  ".btn-danger": "bg-[tx_danger]",
 };
 
 makeStyles(button); // apply button styles
